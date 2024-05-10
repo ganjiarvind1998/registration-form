@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    form,h2{
+        border: 2px solid rgb(128, 60, 65);
+        width: 500px;
+        text-align: center;
+        background-color:rgb(130, 130, 196);
+        border-radius: 10px;
+    }
+    input{
+        border-radius: 5px;
+        height: 20px;
+        ;
+    }
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/submit_registration" method="post">
+
+  <label for="username">FirstName:</label><br>
+  <input type="text" id="FirstName" name="FirstName" required><br><br>
+
+  <label for="username">LastName:</label><br>
+  <input type="text" id="LastName" name="LastName" required><br><br>
+   
+  <label for="search">college name:</label><br>
+  <input type="search" id="search" name="search" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="confirm_password">Confirm Password:</label><br>
+  <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob" required><br><br>
+
+  <label for="gender">Gender:</label><br>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select><br><br>
+   <label for="colot">color:</label><br>
+  <input type="color"><br><br>
+
+  <label for="country">Country:</label><br>
+  <input list="countries" id="country" name="country" required>
+  <datalist id="countries">
+    <option value="telangana">
+    <option value="maharashtra">
+    <option value="karanataka">
+    <option value="kerla">
+    <option value="dhili">
+    <!-- Add more countries as needed -->
+  </datalist><br><br>
+
+  <label for="attach">attach file:</label><br>
+  <input type="file"><br><br>
+
+  <label for="terms">Agree to Terms:</label><br>
+  <input type="checkbox" id="terms" name="terms" required>
+  <label for="terms">I agree to the terms and conditions</label><br><br>
+
+
+  <input type="submit" value="Register">
+  <input type="reset" value="reset">
+</form>
+
+<!-- lecture practise -->
+<form action="">
+<label>enter first name</label>
+<input type="text" id="fname" name="firstname" required><br><br>
+<label>enter last name</label>
+<input type="text" id="lname"><br><br>
+<input type="submit" value="signup">
+
+</form>
+
+</body>
+</html>
